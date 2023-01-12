@@ -26,7 +26,7 @@ export const generatePeople = () => {
   return people
 }
 
-export const classifyPeople = async (peopleObj) => {
+export const classifyPeople = (peopleObj) => {
   const classification = {
     olderThan18: peopleObj.filter((e) => e.age >= 18).length,
     youngerThan18: peopleObj.filter((e) => e.age < 18).length,

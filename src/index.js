@@ -9,7 +9,7 @@ console.log(`El número ${evenNumber} es ${evenOrOdd(evenNumber).evenOrOdd === '
 console.log(`El número ${oddNumber} es ${evenOrOdd(oddNumber).evenOrOdd === 'odd' ? 'impar' : 'par'} y por lo tanto su secuencia es: ${evenOrOdd(oddNumber).sequence}`)
 console.log('\n------ Ejercicio 2 ------')
 const people = generatePeople()
-const classification = await classifyPeople(people)
+const classification = classifyPeople(people)
 print(classification)
 console.log('\n------ Ejercicio 3 ------\n')
 console.log(`El sueldo de una persona que trabaja 30 horas a 10€/hora es de ${computeSalary(10, 30)}€`)

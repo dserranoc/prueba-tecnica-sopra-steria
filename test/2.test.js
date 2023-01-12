@@ -15,7 +15,7 @@ const peopleTest = [
 
 describe('classifyPeople', () => {
   it('should return the correct classification', async () => {
-    const classification = await classifyPeople(peopleTest)
+    const classification = classifyPeople(peopleTest)
     expect(classification).toEqual({
       olderThan18: 7,
       youngerThan18: 3,

@@ -8,7 +8,8 @@
 */
 
 export const computeSalary = (rate, hours) => {
-  return hours <= 40
+  const limit = 40
+  return hours <= limit
     ? rate * hours
-    : rate * 40 + (rate * 1.5) * (hours - 40)
+    : rate * limit + (rate * 1.5) * (hours - limit)
 }
